@@ -8,20 +8,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Blackjack by ronaldmanganaro</title>
+    <title>Running Buddy by Ronald Manganaro/Paul Karscher</title>
   </head>
 
   <body>
-
     <header>
       <div class="container">
-        <h1>Blackjack</h1>
-        <h2>MVC blackjack</h2>
+        <h1>Running Buddy</h1>
+        <h2>Android Application</h2>
 
         <section id="downloads">
-          <a href="https://github.com/ronaldmanganaro/Blackjack/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/ronaldmanganaro/Blackjack/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/ronaldmanganaro/Blackjack" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+          <p>This android application will be available in the Google Play store soon!</p>
         </section>
       </div>
     </header>
@@ -29,7 +26,7 @@
     <div class="container">
       <section id="main_content">
         <h2>
-<a id="this-is-my-blackjack-project" class="anchor" href="#this-is-my-blackjack-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video&#58;</h2>
+<a id="this-is-my-RunningBuddy-project" class="anchor" href="#this-is-my-RunningBuddy-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video&#58;</h2>
         <div align="center">
           <video width="400" controls>
             <source src="videos/BlackjackGameplay.mp4" type="video/mp4">
@@ -39,25 +36,26 @@
           <p class="noTab">This video can also be watched on <a href="https://www.youtube.com/watch?v=0RIVxWG9LeA">youtube</a></p>
         </div>
         <h2>
-<a id="this-is-my-blackjack-project" class="anchor" href="#this-is-my-blackjack-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description&#58;</h2>
+<a id="this-is-my-RunningBuddy-project" class="anchor" href="#this-is-my-RunningBuddy-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description&#58;</h2>
         <p>
-          My blackjack program allows 1 - 3 players to play against a computer controlled dealer. The user is prompted to enter the number of players and then each of the players names.
-          The first player to the right of the dealer is allowed to either hit or stay. If the player decides to hit then they will recieve a card and the total next to the corresponding
-          players name will change. The player is allowed to hit until their total exceeds 21. If the players hit the stay button it will become the next players turn. After the dealer
-          finishes his turn the game ends and the player with the highest score wins. This program can be compiled and run on linux operating systems only.
+			The Running Buddy android was designed to help inexperienced runners and new fitness enthusiasts to run more regularly. In order to achieve this goal we provided feedback on both the runners
+			form as well as the runner's pace. Both of these features helped the target audience to focus on the basics of running and improve on them at their own pace. The point of giving the user the 
+			weather at the start of the application is to help the user find a good time to fit in their run. This is important since one of the biggest hurdles to becoming a routine runner is picking a time to 
+			run that works for your schedule and will make for a more enjoyable run. There's also a light icon on the application that will tell the runner they should find a better place to run if the lighting 
+			is not ideal. This is added since many runners find themselves too into the run to consider simple safety conditions. Lastly in the application their is a spedometer icon that will tell you if 
+			you are running at the optimal 160 - 180 steps per minute. The user is presented with graphs at the end to see how they performed over the course of their rum.
         </p>
         <h2>
-<a id="this-is-my-blackjack-project" class="anchor" href="#this-is-my-blackjack-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Overview&#58;</h2>
+<a id="this-is-my-RunningBuddy-project" class="anchor" href="#this-is-my-RunningBuddy-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Overview&#58;</h2>
         <p>
-          This blackjack program was written in C++. I used the text editor atom throughout the development cycle. The graphics and audio are being handled by
-          <a href="http://www.sfml-dev.org/">SFML: Super Fast Media Library</a>. I created this application for a project in my software development course. The
-          purpose of the assignment was to follow the MVC development pattern. MVC stands for model-view-controller. Model, view, and, controller can be seen as
-          three interconnected parts that come together to create an application. The model is specifically used to represent the data and nothing else. The view
-          is used to diplay data from the model and trigger the controller to handle user interaction. Lastly, the controller provides the data from the model to the view. The
-          greatest advantage of using this pattern of software development is that you avoid unnecessary dependencies. In the long run this will help keep the code
-          simple to understand and easy to maintain.
+          Using the programming language Java and markup language XML a friend of mine, Paul Karscher, and I were able to create this android application within a couple of months. Throughout the applications
+		  development cycle Paul worked on pulling the weather data from <a href="http://openweathermap.org/">http://openweathermap.org/</a> and then displaying it to the user based on their zip code. The weather
+		  portion also gave the suggestion to runner what they should wear, as well as what time would be good to schedule their run. I was in charge of working with the sensors available in the smart phone to find
+		  ways to help runners find out how they performed and to ensure the safety of the runner. The sensors that this application can take advantage of are the accelerometer(hardware), light sensor(hardware), 
+		  and step counter(software). Using information from the accelerometer we were able to come up with certain bounds the user should stay within for good running posture. Using information from the light
+		  sensor we were able to warn the runner when it is too dark in the area to proceed running. Finally the step counter is able to count the steps the user is taking and adjust the icon to let the user know 
+		  every minute how their pace has been over time.
         </p>
-
       </section>
     </div>
   </body>
